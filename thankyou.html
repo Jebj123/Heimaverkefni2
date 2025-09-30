@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="UTF-8">
+  <title>Takk fyrir skráningu</title>
+</head>
+<>
+  <a href="/">Heim</a>
+  <h1>Takk fyrir að hafa samband</h1>
+  <p><strong>Nafn:</strong> <span id="displayName"></span></p>
+  <p><strong>Netfang:</strong> <span id="displayEmail"></span></p>
+  <p><strong>Skilaboð:</strong> <span id="displaymessage"></span></p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+
+    const name = params.get('name');
+    const email = params.get('email');
+    const message= params.get('message');
+
+    document.getElementById('displayName').textContent = name || '[ekki skráð]';
+    document.getElementById('displayEmail').textContent = email || '[ekki skráð]';
+    document.getElementById('displaymessage').textContent = message || '[ekki skráð]';
+  </script>
+  <form action="/Heimaverkefni2/about-me.html" type="get">
+    <button type="submit">Fara aftur á Heimasíðu</button>
+  </form>
+</body>
+</html>
