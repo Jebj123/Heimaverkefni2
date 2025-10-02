@@ -4,27 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About-me</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <h1>Jens Tryggvi Bjarkason</h1>
-      <nav class="navbar">
-        <a href="">Heim</a>
+      <div class="header-left">
+        <img src="resources/peek.jpg" alt="dogpeek" class="logo"/>
+
+      <h1>Heimaverkefni 1</h1>
+
+      </div>
+
+      <div class="header-right">
+        <a href="about-me.html">Heim</a>
         <a href="">Um</a>
         <a href="skraning.html">Hafa Samband</a>
-      </nav>
+      </div>
     </header>
     <main>
-      <img src="jenskro.jpg" alt="jekro" height="300" width="150"
-      />
-      <article id="aboutme">
-        <h2>Um Mig</h2>
+      <br />
+      <div class="images">
+      <img src="resources/jenskro.jpg" alt="jekro"  />
+      <img src="resources/Golfkronos.jpg" alt="golfdog" />
+      <img src="resources/20240430_154647.jpg" alt="golf" />
+      <img src="resources/20240616_134734.jpg" alt="golf" />
+      
+      </div>
+
+      <section class="aboutme">
+        <h2 class="h2aboutme">Um Mig</h2>
         <p>
           Ég er 33 ára gamall Reykvíkingur. Ég er hundapabbi "litla" snúðsins á
           myndinni.
         </p>
-        </article>
-      <section id="interests">
+        </section>
+        <div class="boxes">
+      <section class="listar">
+        <div>
         <h2>Áhugamál</h2>
         <ul>
           <a
@@ -51,8 +67,20 @@
             <li>Hlusta og skapa tónlist</li>
           </a>
         </ul>
+        </div>
+        <div>
+        <h2>Innkaupalisti</h2>
+        <ul>
+          <li>Egg</li>
+          <li>Mjólk</li>
+          <li>Kjöt</li>
+          <li>Kartöflur</li>
+          <li>Skyr</li>
+        </ul>
         </section>
-        <section id="calender">
+        </div>
+      <div class="dagatal">
+        <section class="calender">
         <table border="2px" style="border: 2px solid black;">
           <tr style="border: 2px solid black;"> 
             <th>Dagur</th>
@@ -62,7 +90,7 @@
             <th>Kvöld</th>
           </tr>
           <tr>
-            <div id="monday">
+            <div class="monday">
               <td>Mánudagur</td>
               <td>
                 <ul>
@@ -90,7 +118,7 @@
               </td>
               </div>
             </tr>
-            <div id="tuesday">
+            <div class="tuesday">
             <tr>
               <td>Þriðjudagur</td>
               <td>
@@ -119,7 +147,7 @@
               </td>
               </div>
             </tr>
-              <div id="wednesday">
+              <div class="wednesday">
             <tr>
               <td>Miðvikudagur</td>
               <td>
@@ -148,7 +176,7 @@
               </td>
               </div>
             </tr>
-              <div id="thursday">
+              <div class="thursday">
             <tr>
               <td>Fimmtudagur</td>
               <td>
@@ -177,7 +205,7 @@
               </td>
               </tr>
               </div>
-              <div id="friday">
+              <div class="friday">
             <tr>
               <td>Föstudagur</td>
               <td>
@@ -208,6 +236,7 @@
           </tr>
           </table>
         </section>
+        </div>
     </main>
 
     <footer>

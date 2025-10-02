@@ -3,29 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
     <title>Hafa Samband</title>
   </head>
   <body>
-    <h1>Hafa Samband</h1>
-    <form action="thankyou.html" method="get">
-      <label type="name">Nafn:</label> <br />
-      <input name="name" id="name" type="text" maxlength="40" required />
-      <br />
-      <br />
+    <div class="total-contact">
+    <h1 class="contactText">Hafa Samband</h1>
+    <div class="contact">
+      <form action="thankyou.html" method="get" class="form">
+        <label type="name">Nafn:</label> <br />
+        <input name="name" id="name" type="text" maxlength="40" required />
+        <br />
+        <br />
 
-      <label type="email">Póstfang:</label> <br />
-      <input name="email" id="email" type="email" required />
-      <br />
-      <br />
+        <label type="email">Póstfang:</label> <br />
+        <input name="email" id="email" type="email" required />
+        <br />
+        <br />
 
-      <label type="message">Skilaboð:</label> <br />
-      <textarea name="message" id="message" type="text" required></textarea>
-      <br />
-      <br />
-      <button type="submit">Senda Skilaboð</button>
-    </form>
-    <form action="about-me.html" method="get">
-      <button type="cancel">Hætta við</button>
-    </form>
+        <label type="message">Skilaboð:</label> <br />
+        <textarea name="message" id="message" type="text" required></textarea>
+        <br />
+        <br />
+      </div>
+      <div class="buttons">
+        <button type="submit">Senda Skilaboð</button>
+      </form>
+      <form action="about-me.html" method="get">
+        <button type="cancel">Hætta við</button>
+      </form>
+      </div>
+    </div>
   </body>
 </html>
