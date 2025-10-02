@@ -9,6 +9,7 @@ header {
 
 body {
   background-color: rgb(209, 209, 209);
+  margin: 0px;
 }
 
 .skraning-body {
@@ -34,6 +35,12 @@ body {
   align-items: center;
 }
 
+.img-backround {
+  background-color: rgb(145, 140, 140);
+  border: outset;
+  border-radius: 20px;
+  padding: 10px;
+}
 .images {
   display: flex;
   justify-self: center;
@@ -51,6 +58,11 @@ body {
 p {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutme {
+  border: outset;
+  border-radius: 20px;
 }
 
 .h2aboutme {
